@@ -9,7 +9,7 @@ const client = new Discord.Client({
     ]
 });
 
-const config = require('./config.json');
+const config = require('./config.js');
 client.config = config;
 
 const synchronizeSlashCommands = require('discord-sync-commands');
