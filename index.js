@@ -10,6 +10,7 @@ const client = new Discord.Client({
 });
 
 const config = require('./config.js');
+if (!this.token) this.token = this.config.TOKEN;
 client.config = config;
 
 const synchronizeSlashCommands = require('discord-sync-commands');
